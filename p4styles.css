@@ -1,0 +1,481 @@
+/********w************
+    
+    Project 1 Stylesheet
+    Name: Hang Do
+    Date: 02-19-2023
+    Description: Website Development & Deployment
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+ul,
+li,
+h1,
+h3, h4 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('images/background2.jpg');
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-size: cover;
+}
+
+div#mainheading{
+	height: 210px;
+	display: flex;
+}
+div#mainheading{
+	position: relative;
+	text-align: center;
+}
+	div#mainheading img{
+		width: 100%;
+		object-fit: cover;
+	}
+	
+	div#mainheading h1{
+		position: absolute;
+		top: 16%;
+		left: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 3.6em;
+		font-weight: bolder;
+		letter-spacing: .3rem;
+		font-family: 'Indie Flower', cursive;
+		color: #2c2773;
+	}
+
+	div#mainheading h3{
+		position:absolute;
+		bottom: 8px;
+		right: 30px;
+		letter-spacing: .08rem;
+		font-weight: 1000;
+		color: #520e0e;
+		font-size: 25px;
+		font-family: 'Indie Flower', cursive;
+	}
+
+.nav{
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	background-color: #1e0000;
+}
+	.nav ul{
+		list-style: none;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav ul li{
+		height: 25px;
+		line-height: 25px;
+		transition: 1s;
+		display: inline-block;
+	}
+
+	.nav ul li::after{
+		content: '|';
+		width: 2px;
+		color: #d7917b;
+		display: inline-block;
+		padding-inline: 8px;
+	}
+
+	.nav ul li:last-child:after{
+		display: none;
+	}
+
+	.nav ul li a{
+		text-transform: uppercase;
+		color: rgba(255, 255, 255, 0.81);
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 12px;
+	}
+
+	.nav ul a:hover, .nav ul li a:focus{
+		color: #6600ff; 
+		
+	}
+
+section{
+	width: 90%;
+	background-color: #e4dada;
+	margin: 10px auto;
+	padding: 10px;
+	border: 1px solid #00002158;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #727171, -1px 1px, 2px #5f5d5d;
+	padding-bottom: 40px;
+}
+
+section h3{
+	margin-bottom: 0px;
+	text-shadow: 1px 1px 2px #333;
+	font-family: sans-serif;
+}
+	
+#maincontent article{		
+	margin: 5px 20px;
+	color: #000907;
+}
+
+	#title h4{
+		margin-top: 20px;
+		font-family: 'Domine', serif;
+		text-align: center;
+		font-size: xx-large;
+		text-shadow: 1px 1px 2px #168879;
+		margin-bottom: 10px;
+		color: #148681;
+	}
+	
+	#description a{
+		font-weight: bold;
+	}
+
+	#description h4{
+		font-size: 20px;
+		margin-bottom: 8px;
+		text-shadow: 1px 1px 2px #370e84;
+		color: #491498;
+	}
+
+	#description p{
+		line-height: 22px;
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+
+	#description b{
+		color: rgb(151, 16, 43);
+	}
+
+	#secondparagraph ul li{
+		list-style: none;
+		padding: 5px;
+		margin-left: 30px;
+		margin-bottom: 10px;
+		justify-content: left;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.imagedetail{
+		width: 43.5%;
+		padding: 0.5em;
+		margin: 0px auto;
+		display: block;
+	}
+
+footer{
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden;	
+}
+	footer a{
+		text-decoration: none;
+		color: #e7e4e4;
+	}
+
+	footer .lastnav ul {
+		justify-content: center;
+		margin: 0px;
+		padding: 3px;
+		list-style: none;
+		display: flex;
+		align-items: last baseline;
+	}
+
+	footer a:hover, .lastnav a:focus{
+		color: #6600ff;
+	}
+
+	.lastnav ul li::after{
+		content: '|';
+		width: 1px;
+		color: #000;
+		display: inline-block;
+		padding-inline: 8px;
+	}
+
+	.lastnav ul li:last-child:after{
+		display: none;
+	}
+
+	footer p:last-of-type{
+		color: #eaf3f1;
+		line-height: 18px;
+	}
+
+@media (min-width: 640px){
+	div#mainheading{
+		height: 195px;
+	}
+
+	#mainheading h1{
+		font-size: 3.6em;
+	}
+	
+	.nav{
+		background: linear-gradient(to bottom, #492222 0%,#3a1515 31%,#1e0000);
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+		.nav ul{
+			list-style: none;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+		}
+	
+		.nav ul li{
+			height: 25px;
+			line-height: 25px;
+			transition: 1s;
+			display: inline-block;
+		}
+	
+		.nav ul li::after{
+			content: '|';
+			width: 2px;
+			color: #d7917b;
+			display: inline-block;
+			padding-inline: 8px;
+		}
+	
+		.nav ul li:last-child:after{
+			display: none;
+		}
+	
+		.nav ul li a{
+			text-transform: uppercase;
+			color: rgba(255, 255, 255, 0.81);
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 12px;
+		}
+	
+		.nav ul a:hover, .nav ul li a:focus{
+			color: #6600ff; 
+			
+		}
+	
+	#products li img{
+		display: flex;
+		width: 150px;
+		height: 145px;
+	}
+
+	#productsInfo{
+		width: 90%;
+	}
+
+	#contactForm ul li {
+		width: 75%;
+	}
+}
+
+
+/* Styles for the Products Info area */
+#title p{
+	font-size: 19px;
+	line-height: 25px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#products li{
+	border: 1px black solid;
+	border-radius: 5px;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	margin: 15px auto;
+	list-style: none;
+}
+
+#products li p{
+	font-size: 16px;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	line-height: 20px;
+}
+
+#products h2{
+	margin: 0px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-shadow: 1px 1px 1px #127c8a;
+	color: #148681;
+}
+
+#products li img {
+	float: left;
+	margin-top: 0px;
+	margin-right: 25px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 130px;
+}
+
+#productsInfo h4{
+	font-size: 18px;
+	text-align: center;
+	color: #492222;
+	margin-bottom: 10px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#productsInfo h5{
+	text-align: center;
+	margin-top: 10px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styles for the About Us area */
+#aboutUs h4{
+	color: #4c25a1;
+	font-family: cursive;
+	margin-bottom: 10px;
+}
+
+#aboutUs p{
+	line-height: 20px;
+	font-family: sans-serif;
+}
+
+#aboutUs p a{
+	text-decoration: none;
+	color: #1937cc;
+	font-weight: bold;
+}
+
+#aboutUs p a:hover, #aboutUs p a:focus{
+	color: #6600ff;
+}
+
+/* Styles for the Contact Us area */
+#contactForm{
+	width: 100%;
+	border: 0px;
+	padding-bottom: 3px;
+	padding-top: 8px;
+}
+
+#contactForm h3{
+	text-align: center;
+	margin: auto 10px;
+}
+
+#contactForm ul li {
+	width: 95%;
+	padding: 10px;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+#contactForm label{
+	width: 100px;
+	margin-top: 2px;
+}
+
+#contactForm input{
+	display: inline-block;
+	width: 100%;
+	height: 26px;
+	padding-left: 5px;
+	font-size: 14px;
+	color: #333;
+	margin-top: 8px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+#contactForm input:focus {
+	background-color: #d2fffe;
+	color: #d7917b;
+}
+
+#contactForm textarea{
+	display: inline-block;
+	width: 100%;
+	padding-left: 5px;
+	font-size: 14px;
+	line-height: 26px;
+	padding-top: 3px;
+	color: #333;
+	border-radius: 5px;
+}
+
+#contactForm textarea:focus {
+	background-color: #d2fffe;
+	color: #d7917b;
+}
+
+.error {
+	color: red;
+	margin-top: 5px;
+}
+
+#button {
+	height: 60px;
+	text-align: center;
+}
+
+#button #submit, #button #clear {
+	background:#C1F0F6;
+	border: 1px solid transparent;
+	border-radius: 30px;
+	box-shadow: 1px 3px 3px #000;
+	margin: 5px 8px 10px ;
+	width: 100px;
+	height: 36px;
+	color: #333;
+	font-size: 16px;
+	align-items: center;
+}
+
+#submit {
+	margin-right: 15px;
+}
+
+#submit:hover,
+#clear:hover {
+	cursor: pointer;
+}
+
+#contact{
+	height: 80px;
+}
+
+#contact i{
+	color: #791b1b;
+}
+
+#message{
+	margin-top: 30px;
+	font-family: 'Domine', serif;
+	text-align: center;
+	font-size: xx-large;
+	text-shadow: 1px 1px 2px #168879;
+	color: #148681;
+}

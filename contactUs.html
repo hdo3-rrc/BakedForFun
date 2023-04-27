@@ -1,0 +1,105 @@
+<!--------w-----------
+
+    Project 4
+    Name: Hang Do
+    Date: 02-19-2023
+    Description: Website Development & Deployment
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+		<title>Bake For Fun</title>
+		<meta name="viewport" content="width=device-width">
+		<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Domine&family=Lobster&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="p4styles.css">
+		<script src="contactUsValidate.js"></script>
+	</head>
+    <body>
+        <header>
+			<div id="mainheading">
+				<img src="images/header.jpg" alt="header">
+				<h1>Baked For Fun </h1>
+				<h3><i>A Gift for Every Occasion</i></h3>
+			</div>
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Shop By Products</a></li>
+					<li><a href="aboutus.html">About us</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+        <section>
+			<h3>CONTACT US</h3>
+			<hr>
+			<div id="maincontent">
+				<article>
+					<div id="contact">
+						<p >
+							Questions about our store? Want to know more about our cakes and their price? Want to oder cakes? You can: <br>
+							<b>Call and schedule online:</b> <a href="tel:204-899-7813">204-899-7813</a> <br>
+							<i>OR</i> Send us a message using the form below.
+						</p>
+					</div>
+
+					<form action="thankYou.html" method="post" id="form">
+						<fieldset id="contactForm">
+							<h3>Contact Us</h3>
+							<ul>
+								<li>
+									<label for="name">Name</label>
+									<input id="name" name="name" type="text" />
+									<p class="contactInfoError error" id="name_error">* Required field</p>
+								</li>
+								<li>
+									<label for="phonenumber">Phone Number</label>
+									<input id="phonenumber" name="phonenumber" type="number" />
+									<p class="contactInfoError error" id="phonenumber_error">* Required field</p>
+									<p class="contactInfoError error" id="invalidphone_error">
+										* Invalid phone number
+									</p>
+								</li>
+								<li>
+									<label for="email">Email</label>
+									<input id="email" name="email" type="text" />
+									<p class="contactInfoError error" id="email_error">* Required field</p>
+									<p class="contactInfoError error" id="emailformat_error">
+										* Invalid email address
+									</p>
+								</li>
+								<li>
+									<label for="comments">Comment</label>
+									<textarea name="comments" id="comments" cols="80" rows="5">Write something here...</textarea>
+								</li>
+							</ul>
+						</fieldset>
+
+						<div class="clear"></div>
+							<p id="button">
+								<button type="submit" id="submit">Send</button>
+								<button type="reset" id="clear">Reset</button>
+							</p>
+					</form>									
+				</article>
+			</div>
+        </section>
+
+        <footer>
+			<nav class="lastnav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><p>Copyright &copy; 2023 Hang Do</p></li>
+				</ul>
+			</nav>
+		</footer>
+    </body>  
+</html>
